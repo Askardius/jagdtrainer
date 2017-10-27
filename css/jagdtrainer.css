@@ -1,56 +1,174 @@
+/* core css */
 body{
-    background-color: cornsilk;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
 }
+
+#overlay{
+    background-color: rgba(45, 48, 45, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -10px;
+}
+
+#loadingInfo{
+    width: 170px;
+    height: 140px;
+    background-color: rgb(5, 77, 29);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+#loadingDeer{
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+
+#core .coreButton{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    height: 35px;
+    background-color: rgb(125, 192, 125);
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.divider{
+    border-right: 5px solid rgb(5, 77, 29);
+}
+
+.floatLeft{
+    float: left;
+}
+
+#coreNavigation{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 400px;
+    border: 5px solid rgb(5, 77, 29);
+    border-radius: 5px;
+    
+
+}
+
+#coreInfoField{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 400px;
+    border: 5px solid rgb(5, 77, 29);
+    border-radius: 5px;
+    background-color: rgb(125, 192, 125);
+    padding: 15px;
+}
+
+
+
+.frameVisible{
+    
+}
+
+/* modul 1 css */
 
 .mainframe{
     margin-left: auto;
     margin-right: auto;
 }
 
-.frameVisible{
-    
-}
-
-.answerButton{
+.m1Button{
     border-radius: 6px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    width: 250px;
-    height: 40px;
+    background-color:#aaa5aa;
     margin-top: 25px;
     font-size: 20px;
     cursor: pointer;
 }
 
-/* modul 1 css */
+.m1answerButton{
+    width: 250px;
+    height: 40px;
+}
+
+#m1infoBox{
+    width: 295px;
+    height: 130px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
 
 #m1mainframe{
-    margin-top: 100px;
+    margin-top: 10px;
     width: 1120px;
 
 }
 
 #m1pictureFrame{
-    border: 15px solid rgb(5, 77, 9);
-    background-color: rgb(5, 77, 9);
+    border: 15px solid rgb(5, 77, 29);
+    background-color: rgb(5, 77, 29);
 
     width: 740px;
     height: 490px;
     float: left;
     border-radius: 6px;
     border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     text-align: center;
     vertical-align: middle;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+}
+
+.m1Frame{
+    border: 15px solid rgb(5, 77, 29);
+    background-color: rgb(5, 77, 29);
+    float: left;
+    border-left-width: 0px;
+}
+
+.m1FrameInner{
+    border: 15px solid rgb(255, 227, 193);
+    background-color: rgb(255, 227, 193);
+    float: left;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left-width: 0px;
+    margin-top: -7px;
 }
 
 #m1answerFrame{
-    border: 5px solid rgb(5, 77, 9);
-    background-color: rgb(5, 77, 9);
     width: 330px;
-    height: 260px;
-    float: left;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-left-width: 0px;
+    height: 220px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+    border-top-right-radius: 9px;
+    border-bottom-width: 0px;
+}
+
+#m1answerFrameInner{
+    width: 322px;
+    height: 213px;
+}
+
+#m1resultFrame{
+    width: 330px;
+    height: 255px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+    border-bottom-right-radius: 9px;
+}
+
+#m1resultFrameInner{
+    width: 322px;
+    height: 239px;
 }
 
 #m1picture{
@@ -59,13 +177,33 @@ body{
     margin-top: 20px;
     width: 700px;
     height: 450px;
-    background-image: url(../pic/wildschwein.jpg);
-    background-size: 100%;
+    /*background-image: url(../pic/wildschwein.jpg);*/
+    background-size: cover;
     border-radius: 6px;
 }
 
 #m1buttonBox{
-    margin-top: 20px;
-    margin-left: 30px;;
+    margin-top: -10px;
+    margin-left: 45px;;
     width: 350px;
+}
+
+#resultCall{
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
+    text-align: center; 
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#m1resultButtonBox{
+    margin-left: 65px;
+    width: 210px;
+}
+.m1resultButton{
+    width: 100px;
+
 }
